@@ -3,7 +3,7 @@ import sys
 from PIL import Image
 
 
-def setTransparen(img):
+def setTransparent(img):
     (width, height) = img.size
     #img = img.convert("RGBA")
     for y in range(0, height):
@@ -82,5 +82,5 @@ for idx in range(startIdx, countParam + startIdx):
     alpha += stepParam
     idx += 1
     #img.show()
-    img = setTransparen(img)
+    img = setTransparent(img)
     img.save(fileName)
